@@ -3,6 +3,7 @@ version: '3.4'
 services:
   frontend:
     image: nginx:alpine
+    container_name: frontend
     volumes:
       - ./frontend/:/usr/share/nginx/html:rw
     ports:
@@ -10,6 +11,7 @@ services:
 
   backend:
     build: ./backend
+    container_name: backend
     volumes:
       - ./backend/:/var/www/html:rw
     ports:
@@ -17,6 +19,7 @@ services:
 
   mysql:
     image: mysql:5.7.20
+    container_name: mysql
     volumes:
       - ./database:/var/lib/mysql
     ports:
@@ -26,6 +29,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
     ports:
       - "8080:80"
     env_file:
