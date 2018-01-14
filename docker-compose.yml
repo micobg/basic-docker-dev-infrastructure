@@ -10,7 +10,7 @@ services:
       - "80:80"
 
   backend:
-    build: ./backend
+    build: ./images/backend
     container_name: backend
     volumes:
       - ./backend/:/var/www/html:rw
