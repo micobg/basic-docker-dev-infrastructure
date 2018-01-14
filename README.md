@@ -9,10 +9,10 @@ docker-compose up -d --build
 It contains of four containers:
 
 ## Frontend
-Latest version of nginx server is used for frontend container. It is bound to *localhost* on port *80*. The code is placed in *frontend* directory.
+Latest version of nginx server is used for frontend container. It is bound to *localhost* on port *80*. You should place the code into *frontend* directory.
 
 ## Backend
-Apache + PHP (last version) runs at the backend. You can find it on *localhost:5000*.
+Apache + PHP (last version) runs at the backend. You can find it on *localhost:5000*. The code should be placed in *backend* directory.
 
 ## MySQL
 The password for *root* user in mysql is placed in *config/secrets.env* file. Fell free to change it to something more secure.
