@@ -1,6 +1,8 @@
 # basic-docker-dev-infrastructure
 A simple Docker development infrastructure of LAMP backend server and nginx for the frontend.
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-yellow.svg)](https://raw.githubusercontent.com/micobg/basic-docker-dev-infrastructure/master/LICENSE)
+
 Just run **docker-compose** command to start.
 ```
 docker-compose up -d --build
