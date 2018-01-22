@@ -9,6 +9,9 @@ RUN a2ensite backend
 RUN a2dissite 000-default
 RUN rm /etc/apache2/sites-available/000-default.conf
 
+# Apache anable rewrite
+RUN a2enmod rewrite
+
 # PHP PDO MySQL suppport
 RUN docker-php-ext-install pdo pdo_mysql
 
